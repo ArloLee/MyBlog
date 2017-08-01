@@ -20979,3 +20979,6 @@ Not Found: /favicon.ico
 2017-08-01 18:39:10,103 DEBG 'MyBlog' stderr output:
 [pid: 825|app: 0|req: 12/21] 111.198.71.181 () {46 vars in 775 bytes} [Tue Aug  1 10:39:10 2017] GET /Blog-page/ => generated 3078 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
 
+2017-08-01 18:41:47,799 DEBG 'MyBlog' stderr output:
+[pid: 825|app: 0|req: 13/22] 111.198.71.181 () {42 vars in 732 bytes} [Tue Aug  1 10:41:47 2017] GET /Blog-page/ => generated 3078 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+
