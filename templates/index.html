@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        {% block mytitle %}
+            首页
+        {% endblock %}
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+    <link type="text/css" href="/static/css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/my-css.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/buttons.css">
+    {#custom css#}
+    {% block my-css %}
+    {% endblock %}
+</head>
+
+<body>
+{% block my-body %}
+    <div class="Index-Top">
+        <div class="Info">
+            <div class="Index-img">
+                <img src="/static/Head-images.png" class="img-circle Head-img .img-responsive">
+            </div>
+            <div class="Index-li">
+                <p class="Index-p Index-p-color">Mouse Coder</p>
+                <p class="Index-p-color">虚心学习，乐于分享</p>
+            </div>
+            <div class="Index-li">
+                <p class="Index-p-color">
+                    定义四个区域:内容(content)、内边距(padding)、边框(border)和外边距(margin)...Html基础的话,就应该了解一些基本元素(Element)</p>
+            </div>
+            <div class="Index-li">
+                <p class="Index-p-color"> leebor.cn is my blog 就应该了解一些基本元素</p>
+            </div>
+            <div class="Index-li">
+                <a href="/Blog-page/" class="Index-button">博客</a>
+                <a href="/About-me/" class="Index-button ">关于</a>
+                <a href="/Subscription/" class="Index-button ">订阅</a>
+            </div>
+            <div class="Index-li">
+                <li><img class="Index-icon" src="/static/imgs/sina_vb.png">&nbsp;
+                    <img class="Index-icon" src="/static/imgs/sina_vb.png">&nbsp;
+                    <img class="Index-icon" src="/static/imgs/sina_vb.png">&nbsp;
+
+                </li>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+
+{#bootstrap JQuery#}
+<script type="text/javascript" src="/static/js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap.js"></script>
+
+{#custom js#}
+{% block my-js %}
+{% endblock %}
+
+</html>

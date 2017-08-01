@@ -1,0 +1,58 @@
+{% extends 'index.html' %}
+
+
+{% block mytitle %}
+    文章列表
+{% endblock %}
+
+{% block my-css %}
+    {#    <link>#}
+{% endblock %}
+
+{% block my-body %}
+    <div class="About-top">
+            <div class="About-left ">
+
+                <div class="Index-img">
+                    <a href="/index/"> <img src="/static/Head-images.png" class="img-circle Head-img .img-responsive"></a>
+                </div>
+                <div class="Index-li">
+                    <p class="Index-p Index-p-color">Mouse Coder</p>
+                    <p class="Index-p-color">虚心学习，乐于分享</p>
+                </div>
+                <div class="Index-li">
+                    <p class="Index-p-color">
+                        定义四个区域:内容(content)、内边距(padding)、边框(border)和外边距(margin)...Html基础的话,就应该了解一些基本元素(Element)</p>
+                </div>
+                <div class="Index-li">
+                    <p class="Index-p-color"> leebor.cn is my blog 就应该了解一些基本元素</p>
+                </div>
+                <div class="Index-li">
+                    <a href="/Blog-page/" class="Index-button">博客</a>
+                    <a href="/About-me/" class="Index-button ">关于</a>
+                    <a href="/Subscription/" class="Index-button ">订阅</a>
+                </div>
+                <div class="Index-li">
+                    <li><img class="Index-icon" src="/static/imgs/sina_vb.png">&nbsp;
+                        <img class="Index-icon" src="/static/imgs/sina_vb.png">&nbsp;
+                        <img class="Index-icon" src="/static/imgs/sina_vb.png">&nbsp;
+
+                    </li>
+                </div>
+            </div>
+        <div class="About-right">
+            <div class="Content">
+                <ul class="Blog-Article">
+                    <li class="Blog-title">一道测试题引发的思考</li>
+                    <li class="Blog-content"> 这个简写属性用于一次设置元素字体的两个或更多方面。使用 icon 等关键字可以适当地设置元素的字体
+                        ，使之与用户计算机环境中的某个方面一致。注意，如果没有使用这些关键词，至少要指定字体大小和字体系</li>
+                    <li class="Blog-about"> 2017-07-07.Admin.<a> 继续阅读 </a></li>
+                </ul>
+            </div>
+            <hr class="Blog-hr" align="center"/>
+        </div>
+    </div>
+{% endblock %}
+
+{% block my-js %}
+{% endblock %}
