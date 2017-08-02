@@ -4,6 +4,6 @@ export PATH=/opt/git/bin:/opt/python27/bin:/usr/local/sbin:/usr/local/bin:/sbin:
 
 #echo $1
 git add ./*
-git commit -a -m "$1"
+git commit -a -m '$1'
 
 git push origin master
