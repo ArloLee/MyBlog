@@ -1,0 +1,7 @@
+# pyc
+*.pyc
+Front/*.pyc
+
+# log
+*.log
+tmp/*.log
