@@ -18,6 +18,7 @@ body {
 .Article-page {
     margin: 0px auto;
     padding: 0;
+    padding-bottom: 15px;
 
     width: 70%;
     height: 100%;
