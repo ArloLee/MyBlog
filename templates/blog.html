@@ -1,6 +1,5 @@
 {% extends 'index.html' %}
 
-
 {% block mytitle %}
     文章列表
 {% endblock %}
@@ -41,18 +40,21 @@
                 </div>
             </div>
         <div class="About-right">
-            <div class="Content">
+            {% for k,v in dict.items %}
+            <div class="Content" id="{{ k }}">
                 <ul class="Blog-Article">
-                    <li class="Blog-title">一道测试题引发的思考</li>
-                    <li class="Blog-content"> 这个简写属性用于一次设置元素字体的两个或更多方面。使用 icon 等关键字可以适当地设置元素的字体
-                        ，使之与用户计算机环境中的某个方面一致。注意，如果没有使用这些关键词，至少要指定字体大小和字体系</li>
-                    <li class="Blog-about"> 2017-07-07.Admin.<a> 继续阅读 </a></li>
+                    <li class="Blog-title">{{ v.title|safe }}</li>
+                    <li class="Blog-content"> {{ v.Abs|safe }}</li>
+                    <li class="Blog-about">{{ v.Pub_time|date:"Y-m-d H:i:s"|safe }}&nbsp;&nbsp;<a href="/Article/?id={{ k }}" class="Article-btn">继续阅读 </a></li>
                 </ul>
             </div>
             <hr class="Blog-hr" align="center"/>
+                        {% endfor %}
         </div>
     </div>
 {% endblock %}
 
 {% block my-js %}
+    <script>
+    </script>
 {% endblock %}

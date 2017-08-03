@@ -16,11 +16,14 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from Front import views as Ftviews
+import ckeditor
+
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^Arloadmin/', admin.site.urls),
     url(r'^$', Ftviews.Index_page),
     url(r'^index/$', Ftviews.Index_page),
     url(r'^Blog-page/$', Ftviews.Blog_page),
     url(r'About_me/$', Ftviews.About_me_page),
     url(r'Subscription/$', Ftviews.Subscription_page),
+    url(r'Article/$', Ftviews.Article),
 ]
