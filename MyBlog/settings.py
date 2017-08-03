@@ -23,8 +23,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '5bvf)#epxr!)g@gi)x(t2067^51*=#bmqczo_-a67hb&xmbo0-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
+# DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['*']
 
 # ckeditor
