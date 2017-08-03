@@ -6,7 +6,7 @@ html{
 }
 
 body {
-    background-image: url('/static/Index-back.jpg');
+    background-image: url('/static/Index-back.png');
     background-repeat: no-repeat;
     background-size: 100%;
     display: block;
@@ -158,12 +158,13 @@ body {
 }
 
 .Blog-hr {
-    margin: 0px auto;
+    /*margin: 20px auto;*/
+    margin-left: 50px;
     width: 60%;
     height:3px;
     border:none;
-    border-top:3px double red;
-    text-align: center;
+    border-top:3px double #D8D8D8;
+    text-align: left;
 }
 
 .Blog-Article li {
