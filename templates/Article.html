@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>A Stupid Coder's ugle Blog</title>
-    <link rel="stylesheet" type="text/css" href="/static/css/my-css.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/Article.css">
 </head>
 <body>
 <div class="Article-top">
     <div class="Article-page">
-        <div class="Article-title"><h1>{{ Title|safe }}</h1></div>
-        <div class="Article-pubtime"><a href="/Blog-page/" style="text-decoration: none">回首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ Pub_time|safe }}</div>
-        <hr>
+        <div class="Article-title"><h2>{{ Title|safe }}</h2></div>
+        <div class="Article-pubtime"><a href="/Blog-page/" style="text-decoration: none">回首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ Pub_time|date:"Y-m-d H:i:s"|safe }}</div>
         <div class="Article-content">
             {{ Content|safe }}
         </div>

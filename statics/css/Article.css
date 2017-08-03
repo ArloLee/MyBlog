@@ -1,0 +1,50 @@
+body {
+    background: url("/static/Back-img.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
+    display: block;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.Article-top {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.Article-page {
+    margin: 0px auto;
+    padding: 0;
+
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.Article-title {
+    color: #E1FFFF;
+    text-align: center;
+
+}
+.Article-content {
+
+    filter:alpha(Opacity=40);
+    -moz-opacity:0.4;
+    opacity: 0.65;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.Article-pubtime {
+    color: #E1FFFF;
+    padding-bottom: 5px;
+    border-bottom: double 2px #EEEEEE;
+}
+
+.Article-pubtime a {
+    color: #E1FFFF;
+}
+
