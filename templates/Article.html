@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <title>A Stupid Coder's ugly Blog</title>
     <link rel="stylesheet" type="text/css" href="/static/css/Article.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?22fb83d411f31c15597c3bf4cb042fde";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    {% comment %}{% endcomment %}
 </head>
 <body>
 <div class="Article-top">
     <div class="Article-page">
         <div class="Article-title"><h2>{{ Title|safe }}</h2></div>
-        <div class="Article-pubtime"><a href="/Blog-page/" style="text-decoration: none">回首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ Pub_time|date:"Y-m-d H:i:s"|safe }}</div>
+        <div class="Article-pubtime"><a href="/Blog-page/" style="text-decoration: none">回首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ Pub_time|date:"Y-m-d H:i:s"|safe }}
+        </div>
         <div class="Article-content">
             {{ Content|safe }}
         </div>

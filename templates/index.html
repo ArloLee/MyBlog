@@ -16,6 +16,17 @@
     <link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/static/css/buttons.css">
     {#custom css#}
+    {% block my-js-head %}
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?22fb83d411f31c15597c3bf4cb042fde";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    {% endblock %}
     {% block my-css %}
     {% endblock %}
 </head>

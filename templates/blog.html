@@ -4,56 +4,71 @@
     A Stupid Coder's ugly Blog
 {% endblock %}
 
+{% block my-js-head %}
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?22fb83d411f31c15597c3bf4cb042fde";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+{% endblock %}
+
 {% block my-css %}
     {#    <link>#}
 {% endblock %}
 
 {% block my-body %}
     <div class="About-top">
-            <div class="About-left ">
+        <div class="About-left ">
 
-                <div class="Index-img">
-                    <a href="/index/"> <img src="/static/Head-images.jpg" class="img-circle Head-img .img-responsive"></a>
-                </div>
-                <div class="Index-li">
-                    <p class="Index-p Index-p-color">A Djangoer</p>
-                    <p class="Index-p-color">虚心学习，乐于分享</p>
-                </div>
-                <div class="Index-li">
-                    <p class="Index-p-color">
-                        不求而得，往往求之不得</p>
-                </div>
-                <div class="Index-li">
-                    <p class="Index-p-color"> <a style="text-decoration: none">leebor.cn </a>is my blog </p>
-                    <p class="Index-p-color"> <a style="text-decoration: none">djangoers.com</a> is all Djangoer's home</p>
-                </div>
-                <div class="Index-li">
-                    <a href="/Blog-page/" class="Index-button">博客</a>
-                    <a href="#" class="Index-button " style="text-decoration: none;" onclick="javascript:Aboutme()">关于</a>
-                    <a href="#" class="Index-button" style="text-decoration: none;" onclick="javascript:addFavorite2()">订阅</a>
-
-                </div>
-                <div class="Index-li">
-                    <li>
-{#                        <img class="Index-icon" src="/static/imgs/sina_vb.png">&nbsp;#}
-{#                        <img class="Index-icon" src="/static/imgs/sina_vb.png">&nbsp;#}
-{#                        <img class="Index-icon" src="/static/imgs/sina_vb.png">&nbsp;#}
-                   <p class="Index-p-color"> 京ICP备17043999号</p>
-
-                    </li>
-                </div>
+            <div class="Index-img">
+                <a href="/index/"> <img src="/static/Head-images.jpg" class="img-circle Head-img .img-responsive"></a>
             </div>
+            <div class="Index-li">
+                <p class="Index-p Index-p-color">A Djangoer</p>
+                <p class="Index-p-color">虚心学习，乐于分享</p>
+            </div>
+            <div class="Index-li">
+                <p class="Index-p-color">
+                    不求而得，往往求之不得</p>
+            </div>
+            <div class="Index-li">
+                <p class="Index-p-color"><a style="text-decoration: none">leebor.cn </a>is my blog </p>
+                <p class="Index-p-color"><a style="text-decoration: none">djangoers.com</a> is all Djangoer's home</p>
+            </div>
+            <div class="Index-li">
+                <a href="/Blog-page/" class="Index-button">博客</a>
+                <a href="#" class="Index-button " style="text-decoration: none;" onclick="javascript:Aboutme()">关于</a>
+                <a href="#" class="Index-button" style="text-decoration: none;"
+                   onclick="javascript:addFavorite2()">订阅</a>
+
+            </div>
+            <div class="Index-li">
+                <li>
+                    {#                        <img class="Index-icon" src="/static/imgs/sina_vb.png">&nbsp;#}
+                    {#                        <img class="Index-icon" src="/static/imgs/sina_vb.png">&nbsp;#}
+                    {#                        <img class="Index-icon" src="/static/imgs/sina_vb.png">&nbsp;#}
+                    <p class="Index-p-color"> 京ICP备17043999号</p>
+
+                </li>
+            </div>
+        </div>
         <div class="About-right">
             {% for k,v in dict.items %}
-            <div class="Content" id="{{ k }}">
-                <ul class="Blog-Article">
-                    <li class="Blog-title">{{ v.title|safe }}</li>
-                    <li class="Blog-content"> {{ v.Abs|safe }}</li>
-                    <li class="Blog-about">{{ v.Pub_time|date:"Y-m-d H:i:s"|safe }}&nbsp;&nbsp;<a href="/Article/?id={{ k }}" class="Article-btn">继续阅读 </a></li>
-                </ul>
-            </div>
-            <hr class="Blog-hr" align="center"/>
-                        {% endfor %}
+                <div class="Content" id="{{ k }}">
+                    <ul class="Blog-Article">
+                        <li class="Blog-title">{{ v.title|safe }}</li>
+                        <li class="Blog-content"> {{ v.Abs|safe }}</li>
+                        <li class="Blog-about">{{ v.Pub_time|date:"Y-m-d H:i:s"|safe }}&nbsp;&nbsp;<a
+                                href="/Article/?id={{ k }}" class="Article-btn">继续阅读 </a></li>
+                    </ul>
+                </div>
+                <hr class="Blog-hr" align="center"/>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}
